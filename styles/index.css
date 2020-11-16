@@ -64,7 +64,7 @@ section {
 	justify-content: center;
 }
 .header-content {
-	height: 8vh;
+	height: 6vh;
 	width: 100vw; 
 	margin: 1rem 0; 
 	background-color: none; 
@@ -420,7 +420,16 @@ input[type=submit] {
 
 @media screen and (max-width: 700px) {
 
-	header a {
+	.header-content {
+		margin: auto; 
+	}
+
+	.header-content-name {
+		margin: 0 .2rem; 
+	}
+	
+	.header-content a {
+		margin: 0 .5rem; 
 		font-size: .7rem; 
 	}
 
