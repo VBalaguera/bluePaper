@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Víctor Balaguera's portfolio</title>
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
     <header>
-        <p>Víctor Balaguera</p>
-        <ul>
-            <li><a href="">About me</a></li>
-            <li><a href="">Formation</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+        <div class="header-content">
+            <div class="header-content-name">
+                <a class="navLinks navLinks--active" href="#welcome">Víctor Balaguera</a>
+            </div>
+            <ul>
+                <li><a class="navLinks navLinks--active" href="#about-me">About me</a></li>
+                <li><a class="navLinks navLinks--active" href="#tech-ed">Formation</a></li>
+                <li><a class="navLinks navLinks--active"  href="#projects">Projects</a></li>
+                <li><a class="navLinks navLinks--active"  href="#refs-links-n-contact">Contact</a></li>
+            </ul>
+        </div>
     </header>
-    <section class="intro">
+    <section class="intro sections" id="welcome">
         <div class="intro-container">
-            <h1 class='section-name'>NAME HERE</h1>
+            <h1 class='intro-container-text'>BALAGUERA</h1>
         </div>
     </section>
-    <section class='about-me'>
+
+    <section class='about-me sections' id="about-me">
         <div class="about-me-container">
             <h1>About me</h1>
-            <p class="about-me-text">I'm Víctor Balaguera, front-end developer. I create, sometimes design,  intuitive and pixel-perfect websites. I have a major focus on </p>
-
+            <p class="about-me-text">I'm Víctor Balaguera, a front-end developer from Madrid (Spain). I create, sometimes design, intuitive and pixel-perfect websites. I have a major focus on </p>
+            <p>Here is my <a href="https://github.com/VBalaguera" target="#">GitHub</a>. And this is my <a href="https://www.linkedin.com/in/balaguera/" target="#">LinkedIn</a>.</p>
         </div>
+        
     </section>
-    <section class="tech-ed">
+
+    <section class="tech-ed" id="tech-ed">
         <div class="tech-ed-tech-list-container">
             <h1>
                 Tech I use these days 
@@ -54,66 +61,157 @@
                 <p>
                     Master's degree in Front-end Development in <a href="https://fictizia.com/formacion/master-frontend-html5-css-javascript-react" target="#">Fictizia</a> in the year 2020. 
                 </p>
+                <p>
+                    Perfectly fluent in Russian, English, and Spanish.
+                </p>
+                <p>
+                    I come from a Marketing and PR background, due to my studies at the <a href="http://eng.rudn.ru/" target="#">Peoples' Friendship University of Russia</a>  (Moscow, Russian Federation). 
+                </p>
             </div>
         </div>
     </section>
-    <section class="projects">
+
+    <section class="projects" id="projects">
         <div class="projects-container">
             <div class="projects-container-top">
-                <h1 class="section-name">
-                    PROJECTS
+                <h1>
+                    Projects
                 </h1>
             </div>
             <div class="projects-list">
+
                 <div class="projects-list-item">
                     <div class="projects-list-item-screenshot">
-                        <img src="./images/other sites/tetris.PNG" alt="">
+                        <a href="https://loving-leakey-331710.netlify.app/" target="#"><img src="./images/other sites/tetris.PNG" alt=""></a>
+                        <a class="projects-list-item-screenshot-link" href="https://loving-leakey-331710.netlify.app/" target="#">
+                            Visit the site
+                        </a>
                     </div>
                     <div class="projects-list-item-text">
-                        <p>
-                            Tetris
+                        <p class="tetris-title">
+                            Тетрис
                         </p>
-                        <p>
-                            Made in
+                        <p class="tetris-description">
+                            Homage to the legendary Soviet puzzle game, created to explore advanced JS.
                         </p>
-                        <p>
-                            Third sentence
+                        <p class="tetris-additional-notes">
+                            Made with HTML, CSS, and JS
                         </p>
                     </div>
                 </div>
+
+                <div class="projects-list-item">
+                    <div class="projects-list-item-screenshot">
+
+                        <a href="https://nervous-tereshkova-0da920.netlify.app/" target="#">
+                            <img src="./images/other sites/harry.PNG" alt="">
+                        </a>
+                        <a class="projects-list-item-screenshot-link" href="https://nervous-tereshkova-0da920.netlify.app/" target="#">
+                            Visit the site
+                        </a>
+                    </div>
+                    <div class="projects-list-item-text">
+                        <p class="harry-title">
+                            <span>MARTA HARRY</span> Ilustración y Motion Graphics
+                        </p>
+                        <p class="harry-description">
+                            Commercial site for the Spanish artist Marta Harry
+                        </p>
+                        <p class="harry-additional-notes">
+                            Made with HTML, CSS, and JS
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects-list-item">
+                    <div class="projects-list-item-screenshot">
+                        <a href="https://dreamy-bartik-958863.netlify.app/" target="#">
+                            <img src="./images/other sites/snusk.PNG" alt="">
+                        </a>
+                        <a class="projects-list-item-screenshot-link" href="https://dreamy-bartik-958863.netlify.app/" target="#">
+                            Visit the site
+                        </a>
+                    </div>
+                    <div class="projects-list-item-text">
+                        <p class="snusk-title">
+                            The Many Sounds of Vargskelethor
+                        </p>
+                        <p class="snusk-description">
+                            Soundboard extravaganza created to explore media integration on JS
+                        </p>
+                        <p class="snusk-additional-notes">
+                            Made with HTML, CSS, and JS
+                        </p>
+                    </div>
+                </div>
+              
+                <div class="projects-list-item">
+                    <div class="projects-list-item-screenshot">
+
+                        <a href="https://jolly-goldberg-e7fe3d.netlify.app/" target="#">
+                            <img src="./images/other sites/postcards.PNG" alt="">
+                        </a>
+                        <a class="projects-list-item-screenshot-link" href="https://jolly-goldberg-e7fe3d.netlify.app/" target="#">
+                            Visit the site
+                        </a>
+                    </div>
+                    <div class="projects-list-item-text">
+                        <p class="postcards-title">
+                            Postcards from Another Galaxy
+                        </p>
+                        <p class="postcards-description">
+                            Space exploration inspired fan-made project
+                        </p>
+                        <p class="postcards-additional-notes">
+                            Made with HTML, CSS, and JS
+                        </p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
-    <section class="refs-links-n-contact">
+
+    <section class="refs-links-n-contact" id="refs-links-n-contact">
         <div class="refs-links-n-contact-container">
-            <h2>
-                REFERENCES, EXTERNAL LINKS, AND CONTACT
-            </h2>
-        </div>
-        <div class='contact-form'>
-            <div class="contact-form-container">
-                <div class="alert">Mensaje recibido!</div>
-                <form class="contact-form-container-content"
-                id="contactForm">
-
-
-                    <input type="text" id="name" name="firstname" placeholder="Nombre"
-                    required>
-                
-
-                    <input type="email" id="mail" name="mail" placeholder="Correo electrónico"
-                    required>
-                
-
-                    <textarea id="message" name="subject" placeholder="Mensaje" style="height:200px"
-                    required></textarea>
-                
-                    <input type="submit" value="Enviar" placeholder="Enviar">
-                
-                </form>
+            <h1>
+                Contact
+            </h1>
+            <div class='contact-form'>
+                <div class="contact-form-container">
+                    <div class="alert">Mensaje recibido!</div>
+                    <form class="contact-form-container-content"
+                    id="contactForm">
+    
+    
+                        <input type="text" id="name" name="firstname" placeholder="Nombre"
+                        required>
+                    
+    
+                        <input type="email" id="mail" name="mail" placeholder="Correo electrónico"
+                        required>
+                    
+    
+                        <textarea id="message" name="subject" placeholder="Mensaje" style="height:200px"
+                        required></textarea>
+                    
+                        <input type="submit" value="Enviar" placeholder="Enviar">
+                    
+                    </form>
+                </div>
+    
             </div>
-
         </div>
+        <div class="credits">
+            <p>
+                2020. Made in Madrid.
+            </p>
+            <p>
+                Hosted at Netlify.
+            </p>
+        </div>
+
     </section>
 
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
