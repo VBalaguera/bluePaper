@@ -412,7 +412,8 @@ input[type=submit] {
 		margin: 1rem; 
 	}
 
-	.projects-list-item-text p {
+
+	.about-me-container p, .tech-ed-tech-list-education p, .projects-list-item-text p {
 		font-size: 1.7rem;
 		line-height: 2rem;
 	}
@@ -441,24 +442,71 @@ input[type=submit] {
 		
 	}
 
+	.about-me-container h1, .tech-ed-tech-list-container h1, .tech-ed-tech-list-education h1, .projects-container-top h1, .refs-links-n-contact-container h1  {
+		font-size: 3rem;
+		margin: 1.7rem 0;
+	}
+
+	.about-me-container p, .tech-ed-tech-list-education p, .projects-list-item-text p {
+		font-size: 1.4rem;
+	}
+
+	.projects-list-item-text {
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+		justify-content: center;
+		text-align: center;
+	}
+
 	.projects-list-item-screenshot {
 		width: 100%;
 	}
+
+
 
 
 }
 
 @media screen and (max-width: 500px) {
 	.header-content {
-		margin: auto; 
+		padding: 0 1rem; 
+	}
+
+	.header-content-name {
+		margin: 0 .1rem; 
+	}
+
+	.header-content li {
+		margin: 0 .5rem; 
+	}
+	
+	.header-content a {
+		margin: 0 .1rem; 
+		font-size: .5rem; 
+	}
+
+	.about-me-container h1, .tech-ed-tech-list-container h1, .tech-ed-tech-list-education h1, .projects-container-top h1, .refs-links-n-contact-container h1  {
+		font-size: 2.5rem;
+		margin: 1.3rem 0;
+	}
+
+	.about-me-container p, .tech-ed-tech-list-education p, .projects-list-item-text p {
+		font-size: 1.3rem;
+		line-height: 1.7rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.header-content {
+		padding: 0 .5rem; 
 	}
 
 	.header-content-name {
 		margin: 0 .1rem; 
 	}
 	
-	.header-content a {
-		margin: 0 .1rem; 
-		font-size: .3rem; 
+	.header-content li {
+		margin: 0 .3rem; 
 	}
 }
