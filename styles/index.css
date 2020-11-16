@@ -114,6 +114,7 @@ section {
 .intro-container-text {
 	font-size: 10rem; 
 	font-weight: bolder; 
+	letter-spacing: 10px; 
 }
 
 .tech-ed-tech-list-education {
@@ -438,8 +439,7 @@ input[type=submit] {
 	.intro-container-text {
 		font-size: 3rem; 
 		font-weight: bolder; 
-		margin: auto; 
-		
+		letter-spacing: 5px; 
 	}
 
 	.about-me-container h1, .tech-ed-tech-list-container h1, .tech-ed-tech-list-education h1, .projects-container-top h1, .refs-links-n-contact-container h1  {
