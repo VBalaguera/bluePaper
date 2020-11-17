@@ -168,10 +168,7 @@ section {
 	width: 3rem; 
 	margin: 0 1rem; 
 }
-.sass {
-	width: 4rem; 
-}
-.react {
+.sass, .react, .adobe {
 	width: 4rem; 
 }
 .redux {
@@ -188,9 +185,6 @@ section {
 }
 .figma {
 	width: 2.5rem; 
-}
-.adobe {
-	width: 4rem; 
 }
 
 .projects-container {
@@ -394,8 +388,23 @@ input[type=submit] {
 	}
 
 	.tech-ed-tech-list-icons-icon {
-		width: 3rem; 
-		margin: 0 .5rem; 
+		width: 2.4rem; 
+		margin: .3rem .5rem; 
+	}
+	.sass, .react, .adobe {
+		width: 3.8rem; 
+	}
+	.redux {
+		width: 3.12rem; 
+	}
+	.firebase, .netlify {
+		width: 2.16rem;
+	}
+	.github {
+		width: 2.8rem; 
+	}
+	.figma {
+		width: 2rem; 
 	}
 
 	.projects-list-item {
@@ -449,6 +458,29 @@ input[type=submit] {
 
 	.about-me-container p, .tech-ed-tech-list-education p, .projects-list-item-text p {
 		font-size: 1.4rem;
+	}
+
+	.tech-ed-tech-list-icons-icon {
+		width: 2rem; 
+		margin: .3rem .3rem; 
+	}
+	.sass, .react, .adobe {
+		width: 2.4rem; 
+	}
+	.redux {
+		width: 2.6rem; 
+	}
+	.firebase {
+		width: 1.8rem;
+	}
+	.github {
+		width: 2.2rem; 
+	}
+	.netlify {
+		width: 2.2rem; 
+	}
+	.figma {
+		width: 1.6rem; 
 	}
 
 	.projects-list-item-text {
