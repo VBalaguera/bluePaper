@@ -93,6 +93,12 @@ section {
 .intro, .about-me, .tech-ed, .refs-links-n-contact {
 	height: 100vh; 
 }
+.intro {
+	background-image: url("https://i.ibb.co/vHp6qDp/IMG-20201118-201736.jpg");
+	background-color: #0a2457; 
+	background-position: center;
+	background-size: cover; 
+}
 .refs-links-n-contact {
 	position: relative; 
 }
