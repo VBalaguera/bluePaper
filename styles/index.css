@@ -129,7 +129,7 @@ section {
 .about-me-container h1, .tech-ed-tech-list-container h1, .tech-ed-tech-list-education h1, .projects-container-top h1, .refs-links-n-contact-container h1  {
 	font-size: 3.5rem;
 	font-weight: 600; 
-	margin: 2rem 0;
+	margin: 1.5rem 0;
 	text-align: center;
 }
 
@@ -160,6 +160,32 @@ section {
 	}
 	100% {
 		content: 'fun.'; 
+	}
+}
+
+.about-me-text-es:after {
+	content: '';
+	animation: changingText infinite 5s;
+	
+}
+@-webkit-keyframes changingText {
+	0% {
+		content: 'accesibilidad.';
+	}
+	20% {
+		content: 'eficiencia.';
+	}
+	40% {
+		content: 'imagen corporativa.';
+	}
+	60% {
+		content: 'creatividad.';
+	}
+	80% {
+		content: 'tecnicalidad.';
+	}
+	100% {
+		content: 'diversión.'; 
 	}
 }
 
@@ -295,6 +321,11 @@ section {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.contact-mail {
+	font-size: 1.2rem; 
+	margin: 1rem 0; 
 }
 
 .contact-form {
@@ -459,7 +490,7 @@ input[type=submit] {
 
 	.about-me-container h1, .tech-ed-tech-list-container h1, .tech-ed-tech-list-education h1, .projects-container-top h1, .refs-links-n-contact-container h1  {
 		font-size: 3rem;
-		margin: 1.7rem 0;
+		margin: 1.1rem 0;
 	}
 
 	.about-me-container p, .tech-ed-tech-list-education p, .projects-list-item-text p {
@@ -526,7 +557,7 @@ input[type=submit] {
 
 	.about-me-container h1, .tech-ed-tech-list-container h1, .tech-ed-tech-list-education h1, .projects-container-top h1, .refs-links-n-contact-container h1  {
 		font-size: 2.5rem;
-		margin: 1.3rem 0;
+		margin: 1rem 0;
 	}
 
 	.about-me-container p, .tech-ed-tech-list-education p, .projects-list-item-text p {
