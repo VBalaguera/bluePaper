@@ -10,19 +10,22 @@
     <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-content-name">
-                <a class="navLinks navLinks--active">Víctor Balaguera</a>
-            </div>
-            <ul>
+    <nav class="header-content">
+                <a class="header-content-name navLinks navLinks--active">Víctor Balaguera</a>
+            <ul class="header-content-links">
                 <li><a class="navLinks navLinks--active" href="#tech-ed">Education</a></li>
                 <li><a class="navLinks navLinks--active"  href="#projects">Projects</a></li>
                 <li><a class="navLinks navLinks--active"  href="#refs-links-n-contact">Contact</a></li>
                 <li><a href="./es/portfolioES.html">ESPAÑOL</a></li>
             </ul>
-        </div>
-    </header>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                <div class="line4"></div>
+            </div>
+    </nav>
 <!--     <section class="intro sections" id="welcome">
         <div class="intro-container">
             <h1 class='intro-container-text'>BALAGUERA</h1>
@@ -221,5 +224,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase.js"></script>
 
     <script type="text/javascript" src="./scripts/scrolling.js"> </script>
+
+    <script type="text/javascript" src="scripts/burger.js">
+
+    </script>
 </body>
 </html>

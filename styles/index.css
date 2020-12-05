@@ -64,9 +64,8 @@ section {
 	justify-content: center;
 }
 .header-content {
-	height: 6vh;
-	width: 100vw; 
-	margin: 1rem 0; 
+	min-height: 8vh; 
+	width: 100%; 
 	background-color: none; 
 	position: fixed; 
 	top: 0;
@@ -76,18 +75,42 @@ section {
 	text-transform: uppercase;
 
 	z-index: 99;
+
+	background-color: crimson; 
 }
 
 .header-content-name {
 	margin: 0 .5rem; 
+	letter-spacing: 1px; 
 }
-.header-content ul {
+.header-content-links {
 	display: flex; 
-	align-content: center; 
-	justify-content: center;
+	justify-content: space-around;
+	width: 39%; 
+	background-color: black; 
 }
-.header-content li {
-	margin: 0 1rem; 
+
+
+.burger {
+	display: none; 
+}
+.line1, .line2, .line3, .line4 {
+	height: 2px;
+	background-color: white; 
+	margin: 3px 0; 
+	transition: all .3s ease; 
+}
+.line1 {
+	width: 1.1rem; 
+}
+.line2 {
+	width: .825rem; 
+}
+.line3 {
+	width: .275rem;
+}
+.line4 {
+	width: .55rem;
 }
 
 .intro, .about-me, .tech-ed, .refs-links-n-contact {
@@ -412,7 +435,6 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 1290px) {
-
 	.intro-container-text {
 		font-size: 5rem; 
 		font-weight: bolder; 
@@ -466,20 +488,75 @@ input[type=submit] {
 	}
 }
 
+@media screen and (max-width: 1024px) {
+	.header-content-links {
+		width: 40%; 
+	}
+}
+
+/*responsive nav here*/
+@media screen and (max-width: 768px) {
+
+	body {
+		overflow-x: hidden;
+	}
+
+	.header-content-links {
+		width: 50%; /*100% for full screen, iterate this in frugality*/
+		position: absolute; 
+		top: 6.5vh; 
+		right: 0px; 
+		height: 92vh; 
+		display: flex;
+		flex-direction: column;
+		align-items: center; 
+		transform: translateX(100%); 
+		transition: transform 0.5s ease-in; 
+	}
+
+	.header-content-links li {
+		opacity: 0; 
+	}
+
+	.burger {
+		display: block; 
+		cursor: pointer; 
+	}
+
+}
+
+/**/
+
+.header-content-links-active {
+	transform: translateX(0%); 
+}
+
+@keyframes header-content-links-fade {
+	from {
+		opacity: 0; 
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1; 
+		transform: translateX(0px); 
+	}
+}
+
+/*reshaping the "burger"*/
+.toggle .line1 {
+	transform: rotate(45deg) translate(5px, 6px);
+}
+.toggle .line2 {
+	transform: rotate(-45deg) translate(-2px, 3px);
+}
+.toggle .line3 {
+	transform: rotate(-45deg) translate(13px, 3px);
+}
+.toggle .line4 {
+	transform: rotate(-45deg) translate(5px, -3px);
+}
+
 @media screen and (max-width: 700px) {
-
-	.header-content {
-		margin: auto; 
-	}
-
-	.header-content-name {
-		margin: 0 .2rem; 
-	}
-	
-	.header-content a {
-		margin: 0 .5rem; 
-		font-size: .7rem; 
-	}
 
 
 	.intro-container-text {
@@ -538,23 +615,6 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 500px) {
-	.header-content {
-		padding: 0 1rem; 
-	}
-
-	.header-content-name {
-		margin: 0 .1rem; 
-	}
-
-	.header-content li {
-		margin: 0 .5rem; 
-	}
-	
-	.header-content a {
-		margin: 0 .1rem; 
-		font-size: .5rem; 
-	}
-
 	.about-me-container h1, .tech-ed-tech-list-container h1, .tech-ed-tech-list-education h1, .projects-container-top h1, .refs-links-n-contact-container h1  {
 		font-size: 2.5rem;
 		margin: 1rem 0;
@@ -563,19 +623,5 @@ input[type=submit] {
 	.about-me-container p, .tech-ed-tech-list-education p, .projects-list-item-text p {
 		font-size: 1.3rem;
 		line-height: 1.7rem;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	.header-content {
-		padding: 0 .5rem; 
-	}
-
-	.header-content-name {
-		margin: 0 .1rem; 
-	}
-	
-	.header-content li {
-		margin: 0 .3rem; 
 	}
 }
