@@ -76,7 +76,7 @@ section {
 
 	z-index: 99;
 
-	background-color: crimson; 
+	background-color: #0a2457; 
 }
 
 .header-content-name {
@@ -87,7 +87,7 @@ section {
 	display: flex; 
 	justify-content: space-around;
 	width: 39%; 
-	background-color: black; 
+	background-color: #0a2457;
 }
 
 
@@ -495,7 +495,7 @@ input[type=submit] {
 }
 
 /*responsive nav here*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
 	body {
 		overflow-x: hidden;
@@ -504,14 +504,15 @@ input[type=submit] {
 	.header-content-links {
 		width: 50%; /*100% for full screen, iterate this in frugality*/
 		position: absolute; 
-		top: 6.5vh; 
+		top: 6vh; 
 		right: 0px; 
 		height: 92vh; 
 		display: flex;
 		flex-direction: column;
 		align-items: center; 
+		justify-content: space-around;
 		transform: translateX(100%); 
-		transition: transform 0.5s ease-in; 
+		transition: transform 0.5s ease-in; 	
 	}
 
 	.header-content-links li {
@@ -547,13 +548,13 @@ input[type=submit] {
 	transform: rotate(45deg) translate(5px, 6px);
 }
 .toggle .line2 {
-	transform: rotate(-45deg) translate(-2px, 3px);
+	transform: rotate(-45deg) translate(-3px, 3px);
 }
 .toggle .line3 {
-	transform: rotate(-45deg) translate(13px, 3px);
+	transform: rotate(-45deg) translate(12px, 2.5px);
 }
 .toggle .line4 {
-	transform: rotate(-45deg) translate(5px, -3px);
+	transform: rotate(-45deg) translate(5px, -2.5px);
 }
 
 @media screen and (max-width: 700px) {
