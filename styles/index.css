@@ -503,7 +503,7 @@ input[type=submit] {
 	}
 
 	.header-content-links {
-		width: 50%; /*100% for full screen, iterate this in frugality*/
+		max-width: 50%; /*100% for full screen, iterate this in frugality*/
 		position: absolute; 
 		top: 6vh; 
 		right: 0px; 
