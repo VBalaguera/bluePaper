@@ -4,7 +4,7 @@
 */
 
 
-/*portfolio's default font*/
+/*portfolio's and procedural's default font*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;900&display=swap');
 
 /*harry's font*/
@@ -317,6 +317,11 @@ section {
 
 .tetris-title {
 	font-weight: bolder; 
+}
+
+.procedural-title {
+	font-weight: bolder;
+	color: crimson; 
 }
 
 .harry-title {
