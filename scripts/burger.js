@@ -4,7 +4,6 @@ const burger = document.querySelector('.burger');
     //adding the animation
     const navigationLinks = document.querySelectorAll('.header-content-links li'); 
 
-    const buttons = document.querySelector('.button'); 
 
 //animating the menu 
 const navSlide = () => {
@@ -14,14 +13,16 @@ const navSlide = () => {
     burger.addEventListener("click", () => {
         //showing nav menu
         nav.classList.toggle('header-content-links-active');
+        const mediaQuery = window.matchMedia('(max-width: 500px'); 
 
 
         //animating links
         navigationLinks.forEach((link, index) => {
-            if(link.style.animation) {
-                link.style.animation = ''
-            } else {
+            if(mediaQuery.matches) {
                 link.style.animation = `header-content-links-fade 0.5s ease forwards ${index / 5 + 0.1}s`
+                
+            } else {
+                link.style.animation = ''
             }
             
         })
@@ -41,15 +42,18 @@ const navSlide = () => {
 
 }
 
+//hiding menu after clicking 
 const navCollapse = () => {
     nav.addEventListener("click", () => {
         nav.classList.remove('header-content-links-active'); 
+        const mediaQuery = window.matchMedia('(max-width: 500px'); 
         
         navigationLinks.forEach((link, index) => {
-            if(link.style.animation) {
-                link.style.animation = ''
-            } else {
+            if(mediaQuery.matches) {
                 link.style.animation = `header-content-links-fade 0.5s ease forwards ${index / 5 + 0.1}s`
+                
+            } else {
+                link.style.animation = ''
             }
             
         })

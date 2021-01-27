@@ -496,14 +496,14 @@ input[type=submit] {
 }
 
 /*responsive nav here*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
 
 	body {
 		overflow-x: hidden;
 	}
 
 	.header-content-links {
-		width: 50%; /*100% for full screen, iterate this in frugality*/
+		width: 100%; /*100% for full screen, iterate this in frugality*/
 		position: absolute; 
 		top: 6vh; 
 		right: 0px; 
