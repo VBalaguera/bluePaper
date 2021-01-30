@@ -13,16 +13,14 @@ const navSlide = () => {
     burger.addEventListener("click", () => {
         //showing nav menu
         nav.classList.toggle('header-content-links-active');
-        const mediaQuery = window.matchMedia('(max-width: 500px'); 
 
 
         //animating links
         navigationLinks.forEach((link, index) => {
-            if(mediaQuery.matches) {
-                link.style.animation = `header-content-links-fade 0.5s ease forwards ${index / 5 + 0.1}s`
-                
-            } else {
+            if(link.style.animation) {
                 link.style.animation = ''
+            } else {
+                link.style.animation = `header-content-links-fade 0.5s ease forwards ${index / 5 + 0.1}s`
             }
             
         })
@@ -46,14 +44,12 @@ const navSlide = () => {
 const navCollapse = () => {
     nav.addEventListener("click", () => {
         nav.classList.remove('header-content-links-active'); 
-        const mediaQuery = window.matchMedia('(max-width: 500px'); 
         
         navigationLinks.forEach((link, index) => {
-            if(mediaQuery.matches) {
-                link.style.animation = `header-content-links-fade 0.5s ease forwards ${index / 5 + 0.1}s`
-                
-            } else {
+            if(link.style.animation) {
                 link.style.animation = ''
+            } else {
+                link.style.animation = `header-content-links-fade 0.5s ease forwards ${index / 5 + 0.1}s`
             }
             
         })

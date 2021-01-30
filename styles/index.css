@@ -188,10 +188,10 @@ section {
 
 .about-me-text-es:after {
 	content: '';
-	animation: changingText infinite 5s;
+	animation: changingTextEs infinite 5s;
 	
 }
-@-webkit-keyframes changingText {
+@-webkit-keyframes changingTextEs {
 	0% {
 		content: 'accesibilidad.';
 	}
