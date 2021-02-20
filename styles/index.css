@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+/* Daytona's default font*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
 
 /*portfolio's and procedural's default font*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;900&display=swap');
@@ -317,6 +319,12 @@ section {
 
 .tetris-title {
 	font-weight: bolder; 
+}
+
+.daytona-title {
+	font-family: 'Fira Code', monospace;
+	font-weight: 700; 
+	letter-spacing: 2rem; 
 }
 
 .procedural-title {
