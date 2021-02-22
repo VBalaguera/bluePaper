@@ -2,6 +2,8 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/*tapestry's default font */
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;700;800&display=swap');
 
 /* Daytona's default font*/
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
@@ -321,6 +323,9 @@ section {
 	font-weight: bolder; 
 }
 
+.tapestry-title {
+	font-family: 'Shippori Mincho', serif;
+}
 .daytona-title {
 	font-family: 'Fira Code', monospace;
 	font-weight: 700; 
